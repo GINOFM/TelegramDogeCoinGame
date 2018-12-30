@@ -22,7 +22,10 @@
               margin: 0px;
               padding: 0px;
               border: 0px;
+min-height:540px;
             }
+body[orient="portrait"] { min-height:540px; }
+body[orient="landscape"] { min-height:400px; }
             canvas {
                       image-rendering: optimizeSpeed;
                       -webkit-interpolation-mode: nearest-neighbor;
