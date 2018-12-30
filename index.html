@@ -72,6 +72,7 @@
     </head>
 
     <body>
+<button id="goFS">Go fullscreen</button>
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             <!-- Create the canvas element the game draws to -->
             <canvas id="canvas" width="540" height="640">
@@ -83,11 +84,12 @@
         <script type="text/javascript" src="html5/TelegramGame.js?IMQAC=1922576253"></script>
         <script>window.onload = GameMaker_Init;</script>
 
-		<script>
-var elem = document.getElementById("gm4html5_div_id");
-if (elem.requestFullscreen) {
-  elem.requestFullscreen();
-}
+<script>
+  var goFS = document.getElementById("goFS");
+  goFS.addEventListener("click", function() {
+      document.body.requestFullscreen();
+  }, false);
 </script>
+
     </body>
 </html>
