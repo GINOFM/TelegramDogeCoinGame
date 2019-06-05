@@ -60,7 +60,9 @@ function HTML5_loadscreen01(_graphics, _width, _height, _total, _current, _loadi
 	_graphics.fillStyle = "rgb(0,255,255)";
 	_graphics.font = "26px Arial";
 	_graphics.textAlign = "center";
-	_graphics.fillText("LOADING", (_width*0.5), (_height*0.5) + 20);
+    _graphics.fillText("DogeCoin Orbit", (_width*0.5), (_height*0.5)-50);
+    _graphics.fillText("Loading", (_width*0.5), (_height*0.5));
+    _graphics.fillText("{GFM}", (_width*0.5), (_height*0.5)+120 );
 	_graphics.canvas.style.left = (window.innerWidth/2)-(_width/2) + "px";
 	_graphics.canvas.style.top = (window.innerHeight/2)-(_height/2) + "px";
 }
